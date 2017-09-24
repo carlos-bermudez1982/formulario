@@ -1,0 +1,13 @@
+-crear formulario de registro
+-con 7 campos validados
+-formulario de ingreso 2 campos validados.
+-responsivo, mensajes en colores segun el estatus de lo que sucede.
+-botones de bootstrap.
+-crear mockups
+-crear html donde este un formulario de contacto, validado.
+-landing page (pagina de inicio)
+
+
+validacion de javascript con alerts y prompts
+
+
