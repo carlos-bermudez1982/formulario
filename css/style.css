@@ -15,7 +15,8 @@ body, html {
 }
 
 h1.title {
-	padding-top: 5%;
+	/*se baja un poco el h1 para que no se monte con el menu*/
+	padding-top: 5%; 
 	font-size: 50px;
 	font-weight: 400;
 	color: #fff;
