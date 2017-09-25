@@ -1,26 +1,47 @@
-body, html {
+body {
 	height: 100%;
+	background-size: cover !important;
+	background-attachment: fixed !important;
 	background-repeat: no-repeat;
 	background-color: #d3d3d3;
 	background:url('../img/background.jpg');
 }
 
 .main {
-	/*margin-top: 5px;*/
-	margin-bottom: 70px;
+	margin-top: 10%;
+	margin-bottom: 30px;
+}
+
+.left-text {
+	font-size: 20px;
+	color: #000000;
+	font-weight: 100;
+}
+
+.main-left-login {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	background-color: #fff;
+	/*sombras con bordes redondeados*/
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 }
 
 h1.title {
 	/*se baja un poco el h1 para que no se monte con el menu*/
-	padding-top: 5%; 
+	/*padding-top: 8%; */
 	font-size: 50px;
 	font-weight: 400;
-	color: #fff;
+	color: #000;
 }
 
 hr {
-	width: 20%;
-	color: #fff;
+	width: 50%;
+	color: #000;
 }
 
 .form-group {
@@ -33,6 +54,8 @@ input, input::-webkit-input-placeholder {
 }
 
 .main-login {
+	opacity: 0.95;
+	filter: alpha(opacity=95);
 	background-color: #fff;
 	/*sombras con bordes redondeados*/
 	-moz-border-radius: 2px;
@@ -54,11 +77,6 @@ input, input::-webkit-input-placeholder {
 	margin-top: 5px;
 }
 
-/*.login-register {
-	font-size: 11px;
-	text-align: center;
-}*/
-
 .login-register h4 {
 	font-size: 11px;
 	text-align: center;
@@ -78,4 +96,10 @@ label {
 
 textarea {
 	resize: none;
+}
+
+@media screen and (width: 700px) {
+	.main-left {
+		width: 100%;
+	}
 }

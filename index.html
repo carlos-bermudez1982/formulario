@@ -51,15 +51,15 @@
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
 							<ul id="login-dp" class="dropdown-menu">
 								<li>
-									<div class="row">
+									<!-- <div class="row"> -->
 										<div class="text-center">
 											Usuario? <a href="login.html"><b>Entra aqui!</b></a>
 										</div>
-									</div>	
-									<div class="row">
-										<div class="bottom text-center">
-											Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
-										</div>
+									<!-- </div>	 -->
+								</li>
+								<li>
+									<div class="bottom text-center">
+										Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
 									</div>
 								</li>
 							</ul>
@@ -72,14 +72,25 @@
 	</header>
 
 	<main class="container">
-		<section class="row main">
-			<header class="panel-heading">
-				<div class="panel-title text-center">
+		
+		
+		<section class="row main main-left">
+			<div class="col-md-6">
+			<article class="col-md-12 left-text main-left-login main-center">
+				<h1>Lorem Company</h1>
+				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptates quas eligendi nobis ducimus animi, nostrum eius inventore alias officiis suscipit totam aliquam autem harum ea possimus deleniti laboriosam labore!</span>
+				<span>Repudiandae assumenda nisi excepturi, sit obcaecati cum molestiae laboriosam adipisci natus magnam soluta architecto voluptatum, qui hic, eius inventore sequi, consequuntur quod. Optio a similique odit, facilis illum, consequuntur odio?</span>
+				
+				</p>				
+			</article>
+			</div>
+			<div class="col-md-6">
+
+			<article class="col-md-12 main-login main-center">
+				<div class="panel-heading panel-heading panel-title text-center">
 					<h1 class="title">Enviar Mensaje</h1>
 					<hr>
 				</div>
-			</header>
-			<article class="main-login main-center">
 				<form class="form-horizontal" method="get" id="formMensaje" name="formMensaje" action="#">
 
 					<!-- Usuario del portal-->
@@ -88,7 +99,7 @@
 						<div class="col-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo" required>
+								<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo" minlength="10" required>
 							</div>
 						</div>
 					</div>
@@ -100,7 +111,7 @@
 						<div class="col-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="email" name="correo" class="form-control" id="correo" placeholder="correo@dominio.com" required>
+								<input type="email" name="correo" class="form-control" id="correo" placeholder="correo@dominio.com" minlength="6" required>
 							</div>
 						</div>
 					</div>
@@ -110,7 +121,7 @@
 						<div class="col-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<textarea class="form-control" name="mensaje" id="mensaje" rows="9" cols="25" placeholder="Mensaje" required></textarea>
+								<textarea class="form-control" name="mensaje" id="mensaje" rows="9" cols="25" placeholder="Mensaje" minlength="4" maxlength="145" required></textarea>
 							</div>
 						</div>
 					</div>
@@ -131,6 +142,7 @@
 				</div>
 
 			</article>
+			</div>
 
 			
 		</section>

@@ -52,16 +52,16 @@
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
 							<ul id="login-dp" class="dropdown-menu">
 								<li>
-									<div class="row">
+									<!-- <div class="row"> -->
 										<div class="text-center">
 											Usuario? <a href="login.html"><b>Entra aqui!</b></a>
 										</div>
-									</div>	
-									<div class="row">
+									<!-- </div>	 -->
+									<!-- <div class="row"> -->
 										<div class="bottom text-center">
 											Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
 										</div>
-									</div>
+									<!-- </div> -->
 								</li>
 							</ul>
 				        </li>
@@ -74,56 +74,64 @@
 
 	<main class="container">
 		<section class="row main">
-			<header class="panel-heading">
-				<div class="panel-title text-center">
-					<h1 class="title">Ingresar</h1>
-					<hr>
-				</div>
-			</header>
-			<article class="main-login main-center">
-				<form class="form-horizontal" method="get" id="formLogin" name="formLogin" action="index.html">
-
-					<!-- Usuario del portal-->
-					<div class="form-group">
-						<label for="usuario" class="col-sm-2 control-label">Usuario</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-								<input type="email" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
+			<div class="col-md-6">
+				<article class="col-md-12 left-text main-left-login main-center">
+					<h1>Lorem Company</h1>
+					<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptates quas eligendi nobis ducimus animi, nostrum eius inventore alias officiis suscipit totam aliquam autem harum ea possimus deleniti laboriosam labore!</span>
+					<span>Repudiandae assumenda nisi excepturi, sit obcaecati cum molestiae laboriosam adipisci natus magnam soluta architecto voluptatum, qui hic, eius inventore sequi, consequuntur quod. Optio a similique odit, facilis illum, consequuntur odio?</span>
+					
+					</p>				
+				</article>
+			</div>
+			<div class="col-md-6">
+				<article class="main-login main-center">
+					<div class="panel-heading panel-title text-center">
+						<h1 class="title">Ingresar</h1>
+						<hr>
+					</div>
+					<form class="form-horizontal" method="get" id="formLogin" name="formLogin" action="index.html">
+			
+						<!-- Usuario del portal-->
+						<div class="form-group">
+							<label for="usuario" class="col-sm-2 control-label">Usuario</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="email" name="usuario" class="form-control" id="usuario" placeholder="Usuario" required>
+								</div>
 							</div>
 						</div>
-					</div>
 
 
-					<!-- Contraseña de Usuario-->
-					<div class="form-group">
-						<label for="clave" class="col-sm-2 control-label">Contraseña</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" name="clave" class="form-control" id="clave" placeholder="Contraseña">
+						<!-- Contraseña de Usuario-->
+						<div class="form-group">
+							<label for="clave" class="col-sm-2 control-label">Contraseña</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" name="clave" class="form-control" id="clave" placeholder="Contraseña" required>
+								</div>
 							</div>
 						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary btn-lg btn-block login-button" id="entrar">Entrar</button>
+						</div>
+
+						<div class="login-register">
+							<h4>No tienes Usuario, <a href="register.html">Registrate</a></h4>
+							<h4>Volver a la página Principal <a href="index.html">Aqui</a></h4>
+						</div>
+
+					</form>
+					
+					<div id="mensaje-error" class="alert alert-danger alert-dismissable fade in">
+						<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+	    				<strong>Error!</strong> Algunos de los datos ingresados no son correctos.
 					</div>
 
-					<div class="form-group">
-						<button class="btn btn-primary btn-lg btn-block login-button" id="entrar">Entrar</button>
-					</div>
-
-					<div class="login-register">
-						<h4>No tienes Usuario, <a href="register.html">Registrate</a></h4>
-						<h4>Volver a la página Principal <a href="index.html">Aqui</a></h4>
-					</div>
-
-				</form>
-				
-				<div id="mensaje-error" class="alert alert-danger alert-dismissable fade in">
-					<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
-    				<strong>Error!</strong> Algunos de los datos ingresados no son correctos.
-				</div>
-
-			</article>
-
+				</article>
+			</div>
 			
 		</section>
 		

@@ -53,16 +53,16 @@
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
 							<ul id="login-dp" class="dropdown-menu">
 								<li>
-									<div class="row">
+									<!-- <div class="row"> -->
 										<div class="text-center">
 											Usuario? <a href="login.html"><b>Entra aqui!</b></a>
 										</div>
-									</div>	
-									<div class="row">
+									<!-- </div>	 -->
+									<!-- <div class="row"> -->
 										<div class="bottom text-center">
 											Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
 										</div>
-									</div>
+									<!-- </div> -->
 								</li>
 							</ul>
 				        </li>
@@ -75,118 +75,130 @@
 	<main class="container">
 		<section class="row main">
 			<header class="panel-heading">
-				<div class="panel-title text-center">
-					<h1 class="title">Registrate!</h1>
-					<hr>
-				</div>
+
 			</header>
-			<article class="main-login main-center">
 
-				<div id="mensaje-error" class="alert alert-danger alert-dismissable fade in">
-					<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
-    				<strong>Error!</strong> Algunos de los datos ingresados no son correctos.
-				</div>
-				<form class="form-horizontal" id="formRegister" name="formRegister" method="get" action="index.html">
-
-					<!-- Nombre personal del usuario -->
-					<div class="form-group">
-						<label for="nombre" class="col-sm-2 control-label">Nombre</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo">
-							</div>
-						</div>
-					</div>
-					<!-- Correo del usuario -->
-					<div class="form-group">
-						<label for="cedula" class="col-sm-2 control-label">Cédula</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-								<input type="text" name="cedula" class="form-control" id="cedula" placeholder="Cedula de Indentidad">
-							</div>
-						</div>
-					</div>
-					<!-- Fecha de Nacimiento -->
-					<div class="form-group">
-						<label for="nacimiento" class="col-sm-2 control-label">Nacimiento</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
-								<input type="date" name="nacimiento" class="form-control" id="nacimiento" placeholder="00/00/0000">
-							</div>
-						</div>
-					</div>		
+			<div class="col-md-6">
+				<article class="col-md-12 left-text main-left-login main-center">
+					<h1>Lorem Company</h1>
+					<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptates quas eligendi nobis ducimus animi, nostrum eius inventore alias officiis suscipit totam aliquam autem harum ea possimus deleniti laboriosam labore!</span>
+					<span>Repudiandae assumenda nisi excepturi, sit obcaecati cum molestiae laboriosam adipisci natus magnam soluta architecto voluptatum, qui hic, eius inventore sequi, consequuntur quod. Optio a similique odit, facilis illum, consequuntur odio?</span>
 					
-					<!-- Correo Electronico -->
-					<div class="form-group">
-						<label for="correo" class="col-sm-2 control-label">Correo</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="email" name="correo" class="form-control" id="correo" placeholder="correo@correo.com">
+					</p>				
+				</article>
+			</div>
+			<div class="col-md-6">
+				<article class="main-login main-center">
+					<div class="panel-heading panel-title text-center">
+						<h1 class="title">Registrate!</h1>
+						<hr>
+					</div>
+					<div id="mensaje-error" class="alert alert-danger alert-dismissable fade in">
+						<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+	    				<strong>Error!</strong> Algunos de los datos ingresados no son correctos.
+					</div>
+					<form class="form-horizontal" id="formRegister" name="formRegister" method="get" action="index.html">
+
+						<!-- Nombre personal del usuario -->
+						<div class="form-group">
+							<label for="nombre" class="col-sm-2 control-label">Nombre</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo" minlength="10" required>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- Correo Electronico  confirmacion-->
-					<div class="form-group">
-						<label for="correo2" class="col-sm-2 control-label">Confirmar</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="email" name="correo2" class="form-control" id="correo2" placeholder="Repetir correo@correo.com">
+						<!-- Correo del usuario -->
+						<div class="form-group">
+							<label for="cedula" class="col-sm-2 control-label">Cédula</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" name="cedula" class="form-control" id="cedula" placeholder="Cedula de Indentidad" minlength="10" maxlength="10" required>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- Usuario del portal-->
-					<div class="form-group">
-						<label for="usuario" class="col-sm-2 control-label">Usuario</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-								<input type="email" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
+						<!-- Fecha de Nacimiento -->
+						<div class="form-group">
+							<label for="nacimiento" class="col-sm-2 control-label">Nacimiento</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
+									<input type="date" name="nacimiento" class="form-control" id="nacimiento" required>
+								</div>
+							</div>
+						</div>		
+						
+						<!-- Correo Electronico -->
+						<div class="form-group">
+							<label for="correo" class="col-sm-2 control-label">Correo</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="email" name="correo" class="form-control" id="correo" placeholder="correo@dominio.com" minlength="6" required>
+								</div>
 							</div>
 						</div>
-					</div>
 
-
-					<!-- Contraseña de Usuario-->
-					<div class="form-group">
-						<label for="clave" class="col-sm-2 control-label">Contraseña</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" name="clave" class="form-control" id="clave" placeholder="Contraseña">
+						<!-- Correo Electronico  confirmacion-->
+						<div class="form-group">
+							<label for="correo2" class="col-sm-2 control-label">Confirmar</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="email" name="correo2" class="form-control" id="correo2" placeholder="Repetir correo@dominio.com" minlength="6" required>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- Cofirmar Contraseña de Usuario-->
-					<div class="form-group">
-						<label for="clave2" class="col-sm-2 control-label">Confirmar</label>
-						<div class="col-sm-10">
-							<div class="input-group">
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-								<input type="password" name="clave2" class="form-control" id="clave2" placeholder="Repetir Contraseña">
+						<!-- Usuario del portal-->
+						<div class="form-group">
+							<label for="usuario" class="col-sm-2 control-label">Usuario</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+									<input type="email" name="usuario" class="form-control" id="usuario" placeholder="Usuario" minlength="3" required>
+								</div>
 							</div>
 						</div>
-					</div>
+
+
+						<!-- Contraseña de Usuario-->
+						<div class="form-group">
+							<label for="clave" class="col-sm-2 control-label">Contraseña</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" name="clave" class="form-control" id="clave" placeholder="Contraseña" minlength="8" required>
+								</div>
+							</div>
+						</div>
+
+						<!-- Cofirmar Contraseña de Usuario-->
+						<div class="form-group">
+							<label for="clave2" class="col-sm-2 control-label">Confirmar</label>
+							<div class="col-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" name="clave2" class="form-control" id="clave2" placeholder="Repetir Contraseña" minlength="8" required>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<button class="btn btn-primary btn-lg btn-block login-button" id="entrar">Registrarse</button>
+						</div>
+
+						<div class="login-register">
+							<h4>Ya tienes usuario, <a href="login.html">Conectate</a></h4>
+							<h4>Volver a la página Principal <a href="index.html">Aqui</a></h4>
+						</div>
+
+					</form>
 					
-					<div class="form-group">
-						<button class="btn btn-primary btn-lg btn-block login-button" id="entrar">Registrarse</button>
-					</div>
-
-					<div class="login-register">
-						<h4>Ya tienes usuario, <a href="login.html">Conectate</a></h4>
-						<h4>Volver a la página Principal <a href="index.html">Aqui</a></h4>
-					</div>
-
-				</form>
-				
-			</article>
+				</article>
+			</div>
 
 		</section>
 		
