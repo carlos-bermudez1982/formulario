@@ -98,6 +98,10 @@ textarea {
 	resize: none;
 }
 
+.texto {
+	font-size: 12px;
+}
+
 @media screen and (width: 700px) {
 	.main-left {
 		width: 100%;
