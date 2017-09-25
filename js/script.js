@@ -9,9 +9,7 @@ botonFormulario.addEventListener('click', function(e) {
 	var x = validarFormulario();
 	if (!x=='') {
 		alert(x);	
-	} else {
-
-	}
+	} 
 
 	
 
@@ -222,7 +220,7 @@ function validarFormulario()  {
 		nombreDivMsgEnvi.setAttribute('style','display: block;');
 	}
 
-	if (prompt('Quieres enviar el formulario')=='Si') {
+	if (prompt('Quieres enviar el formulario (Si/No)').toUpperCase()=='SI') {
 		document.forms[nombreFormulario].submit();
 	}
 

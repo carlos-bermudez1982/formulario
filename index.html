@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -24,26 +24,30 @@
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><p class="navbar-text">Ya tienes una cuenta?</p></li>
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
-						<ul id="login-dp" class="dropdown-menu">
-							<li>
-								<div class="row">
-									<div class="text-center">
-										Usuario? <a href="login.html"><b>Entra aqui!</b></a>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        				<li><a href="#">Link</a></li>
+					</ul>
+				    <ul class="nav navbar-nav navbar-right">
+				        <li><p class="navbar-text">Ya tienes una cuenta?</p></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Entrar</b> <span class="caret"></span></a>
+							<ul id="login-dp" class="dropdown-menu">
+								<li>
+									<div class="row">
+										<div class="text-center">
+											Usuario? <a href="login.html"><b>Entra aqui!</b></a>
+										</div>
+									</div>	
+									<div class="row">
+										<div class="bottom text-center">
+											Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
+										</div>
 									</div>
-								</div>	
-								<div class="row">
-									<div class="bottom text-center">
-										Nuevo? <a href="register.html"><b>Unete aqui!</b></a>
-									</div>
-								</div>
-							</li>
-						</ul>
-			        </li>
-			      </ul>
+								</li>
+							</ul>
+				        </li>
+				    </ul>
 			    </div>
 			</div>
 			
